@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SvgDataAdapterSample</RootNamespace>
+    <AssemblyName>SvgDataAdapterSample</AssemblyName>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+    <Platforms>x86;AnyCPU</Platforms>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <DefaultItemExcludes>obj*/**</DefaultItemExcludes>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Data\countries.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Data" Version="22.1.6" />
+    <PackageReference Include="DevExpress.Data.Desktop" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Map.Core" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Mvvm" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Office.Core" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Pdf.Core" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Printing.Core" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Core" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.RichEdit.Export" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Core" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Map" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Printing" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Reporting" Version="22.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.All" Version="22.1.*-*" />
+  </ItemGroup>
+</Project>
