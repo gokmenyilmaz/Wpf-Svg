@@ -33,7 +33,25 @@ namespace WpfApp1
             foreach (MapPath item in shapes)
             {
                 item.Fill = Brushes.Blue;
+
+
+                item.MouseLeftButtonDown += İtem_MouseLeftButtonDown;
             }
+        }
+
+        private void İtem_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            var x = sender as MapPath;
+
+            var c0 = x.Data;
+
+            var c1 = x.Attributes[0].Value;
+            var c2 = x.Attributes;
+
+            x.ToolTipPattern = c1.ToString();
+
+          
+
         }
     }
 }
