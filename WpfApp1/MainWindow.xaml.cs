@@ -32,7 +32,7 @@ namespace WpfApp1
 
             foreach (MapPath item in shapes)
             {
-                item.Fill = Brushes.Blue;
+                item.Fill = Brushes.Red;
 
 
                 item.MouseLeftButtonDown += İtem_MouseLeftButtonDown;
