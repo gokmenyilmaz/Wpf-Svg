@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DevExpress.Xpf.Map;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,16 @@ namespace WpfApp1
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void SvgFileDataAdapter_ShapesLoaded(object sender, DevExpress.Xpf.Map.ShapesLoadedEventArgs e)
+        {
+            var shapes = e.Shapes.Where(c => c.GetType()== typeof(MapPath)).ToList();
+
+            foreach (MapPath item in shapes)
+            {
+                item.Fill = Brushes.Blue;
+            }
         }
     }
 }
