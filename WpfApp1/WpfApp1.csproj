@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <None Remove="Data\tr.svg" />
+    <None Remove="Data\tr0.svg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -17,6 +18,7 @@
 
   <ItemGroup>
     <Resource Include="Data\tr.svg" />
+    <Resource Include="Data\tr0.svg" />
   </ItemGroup>
 
 </Project>

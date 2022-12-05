@@ -11,7 +11,7 @@
 
         <dxm:MapControl>
             <dxm:VectorLayer>
-                <dxm:SvgFileDataAdapter FileUri="Data\tr.svg" ShapesLoaded="SvgFileDataAdapter_ShapesLoaded"  />
+                <dxm:SvgFileDataAdapter FileUri="Data\tr0.svg" ShapesLoaded="SvgFileDataAdapter_ShapesLoaded"  />
             </dxm:VectorLayer>
         </dxm:MapControl>
     </Grid>
