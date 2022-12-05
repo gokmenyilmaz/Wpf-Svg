@@ -9,8 +9,8 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
-        <dxm:MapControl>
-            <dxm:VectorLayer>
+        <dxm:MapControl x:Name="mapControl">
+            <dxm:VectorLayer x:Name="vectorLayer"  DataLoaded="VectorLayer_DataLoaded">
                 <dxm:SvgFileDataAdapter FileUri="Data\tr0.svg" ShapesLoaded="SvgFileDataAdapter_ShapesLoaded"  />
             </dxm:VectorLayer>
         </dxm:MapControl>

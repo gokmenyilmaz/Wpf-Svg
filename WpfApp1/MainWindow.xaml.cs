@@ -54,5 +54,10 @@ namespace WpfApp1
           
 
         }
+
+        private void VectorLayer_DataLoaded(object sender, DataLoadedEventArgs e)
+        {
+            mapControl.ZoomToFitLayerItems(new LayerBase[] { vectorLayer });
+        }
     }
 }
