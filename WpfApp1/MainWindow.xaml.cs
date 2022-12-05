@@ -48,7 +48,8 @@ namespace WpfApp1
             var c1 = x.Attributes[0].Value;
             var c2 = x.Attributes;
 
-            x.ToolTipPattern = c1.ToString();
+
+            MessageBox.Show(c1.ToString());
 
           
 
