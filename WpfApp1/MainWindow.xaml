@@ -9,7 +9,9 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
-        <dxm:MapControl x:Name="mapControl">
+        <dxm:MapControl  x:Name="mapControl" EnableZooming="True"
+                         EnableScrolling="False" EnableRotation="False" CenterPoint="45,18" InitialMapSize="712,512"  ZoomLevel="1">
+           
             <dxm:VectorLayer x:Name="vectorLayer"  DataLoaded="VectorLayer_DataLoaded">
                 <dxm:SvgFileDataAdapter FileUri="Data\tr0.svg" ShapesLoaded="SvgFileDataAdapter_ShapesLoaded"  />
             </dxm:VectorLayer>
